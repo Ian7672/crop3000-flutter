@@ -9,6 +9,7 @@ Crop3000 adalah utilitas Flutter desktop untuk crop, resize, dan re‑encode ban
    - **Bahasa UI**: Indonesia, English, 中文, 日本語, 한국어, العربية, Русский, हिन्दी.
    - **Tema**: Light, Dark, atau System (disimpan ke SharedPreferences).
    - **Output**: ukuran target (px), format (JPG/PNG/BMP – JPG default), dan profil kompresi.
+   - Tekan tombol **Help** di top bar kapan saja untuk membuka panduan lengkap langsung di aplikasi.
 3. Masukkan gambar dengan:
    - Drag & drop ke area drop,
    - Paste path ke input manual lalu tekan tombol tambah,
@@ -25,6 +26,7 @@ Crop3000 adalah utilitas Flutter desktop untuk crop, resize, dan re‑encode ban
 - **Proses paralel**: crop/resize/encode di isolate dengan progress real‑time.
 - **Tema & bahasa tersimpan**: pilihan Light/Dark/System dan bahasa UI disimpan dengan SharedPreferences.
 - **Log aktivitas**: riwayat sukses/gagal per file dengan detail format dan kompresi.
+- **Help & Guide**: tombol *Help* di top bar membuka dialog panduan langkah demi langkah plus tautan cepat ke README.
 - **Menu Pengaturan & Tentang**:
   - Picker bahasa (Indonesia, English, 中文, 日本語, 한국어, العربية, Русский, हिन्दी) dengan nama asli (bukan latin).
   - Seksi *About* yang mengkredit GitHub `Ian7672`.

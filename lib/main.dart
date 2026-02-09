@@ -6,6 +6,7 @@ import 'package:desktop_drop/desktop_drop.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:image/image.dart' as img;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -338,6 +339,123 @@ class AppStrings {
         ar: 'الإعدادات ($name)',
         ru: 'Настройки ($name)',
         hi: 'सेटिंग्स ($name)',
+      );
+
+  String get helpButtonLabel => _pick(
+        id: 'Panduan',
+        en: 'Help',
+        zh: 'Help',
+        ja: 'Help',
+        ko: 'Help',
+        ar: 'Help',
+        ru: 'Help',
+        hi: 'Help',
+      );
+
+  String get helpTooltip => _pick(
+        id: 'Buka panduan lengkap Crop3000',
+        en: 'Open the full Crop3000 guide',
+        zh: 'Open the full guide',
+        ja: 'Open the full guide',
+        ko: 'Open the full guide',
+        ar: 'Open the full guide',
+        ru: 'Open the full guide',
+        hi: 'Open the full guide',
+      );
+
+  String get helpDialogTitle => _pick(
+        id: 'Panduan Crop3000',
+        en: 'Crop3000 Guide',
+        zh: 'Crop3000 Guide',
+        ja: 'Crop3000 Guide',
+        ko: 'Crop3000 Guide',
+        ar: 'Crop3000 Guide',
+        ru: 'Crop3000 Guide',
+        hi: 'Crop3000 Guide',
+      );
+
+  String get helpDialogDescription => _pick(
+        id: 'Ikuti langkah berikut untuk menyiapkan dan memproses gambar dengan cepat:',
+        en: 'Follow these steps to prepare and process images quickly:',
+        zh: 'Follow these steps to prepare and process images quickly:',
+        ja: 'Follow these steps to prepare and process images quickly:',
+        ko: 'Follow these steps to prepare and process images quickly:',
+        ar: 'Follow these steps to prepare and process images quickly:',
+        ru: 'Follow these steps to prepare and process images quickly:',
+        hi: 'Follow these steps to prepare and process images quickly:',
+      );
+
+  List<String> get helpDialogSteps => _pick(
+        id: [
+          'Tambahkan foto melalui drag & drop, tombol Pilih File, atau input path manual.',
+          'Atur ukuran keluaran, format (JPG/PNG/BMP), dan mode kompresi sesuai kebutuhan.',
+          'Gunakan menu Compression untuk menyeimbangkan kualitas vs ukuran file.',
+          'Tekan Mulai dan biarkan proses berjalan di background; UI akan tetap responsif.',
+        ],
+        en: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+        zh: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+        ja: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+        ko: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+        ar: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+        ru: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+        hi: [
+          'Add photos via drag & drop, the Choose Files button, or manual path input.',
+          'Adjust output size, choose JPG/PNG/BMP, and pick the compression profile you need.',
+          'Use the Compression menu to balance quality versus file size.',
+          'Press Start to run the batch; heavy work stays in the background so the UI remains smooth.',
+        ],
+      );
+
+  String get helpDialogFooter => _pick(
+        id: 'Tip: Tombol bantuan bisa ditekan kapan pun untuk membaca ulang panduan atau membuka README.',
+        en: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+        zh: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+        ja: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+        ko: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+        ar: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+        ru: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+        hi: 'Tip: Tap the help button anytime to revisit this guide or open the README.',
+      );
+
+  String get helpDialogOpenReadme => _pick(
+        id: 'Buka README',
+        en: 'Open README',
+        zh: 'Open README',
+        ja: 'Open README',
+        ko: 'Open README',
+        ar: 'Open README',
+        ru: 'Open README',
+        hi: 'Open README',
       );
 
   String get dropTitle => _pick(
@@ -953,6 +1071,17 @@ class AppStrings {
         hi: 'Ko-fi से दान करें',
       );
 
+  String get okButton => _pick(
+        id: 'Oke',
+        en: 'OK',
+        zh: '确定',
+        ja: 'OK',
+        ko: '확인',
+        ar: 'حسناً',
+        ru: 'ОК',
+        hi: 'ठीक है',
+      );
+
   String get openLinkError => _pick(
         id: 'Tidak bisa membuka tautan.',
         en: "Couldn't open the link.",
@@ -1028,6 +1157,20 @@ class _CropAppState extends State<CropApp> {
     return MaterialApp(
       title: strings.appTitle,
       debugShowCheckedModeBanner: false,
+      locale: _language.locale,
+      supportedLocales: AppLanguage.supportedLocales,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      builder: (context, child) {
+        final content = child ?? const SizedBox.shrink();
+        return Directionality(
+          textDirection: _language.textDirection,
+          child: content,
+        );
+      },
       themeMode: _themeMode,
       theme: _buildTheme(Brightness.light),
       darkTheme: _buildTheme(Brightness.dark),
@@ -1078,9 +1221,11 @@ class CropHomePage extends StatefulWidget {
 
 class _CropHomePageState extends State<CropHomePage> {
   static const int _defaultTargetSize = 3000;
+  static const int _maxWorkerCap = 4;
   static const String _githubUrl = 'https://github.com/Ian7672';
   static const String _trakteerUrl = 'https://trakteer.id/Ian7672';
   static const String _koFiUrl = 'https://ko-fi.com/Ian7672';
+  static const String _guideUrl = 'https://github.com/Ian7672/crop3000-flutter/blob/main/README.md';
   bool _isDragging = false;
   bool _isProcessing = false;
   CompressionMode _compressionMode = CompressionMode.balanced;
@@ -1093,6 +1238,7 @@ class _CropHomePageState extends State<CropHomePage> {
   final TextEditingController _manualPathController = TextEditingController();
   final TextEditingController _sizeController =
       TextEditingController(text: _defaultTargetSize.toString());
+  _ProcessingPool? _processingPool;
 
   AppStrings get _strings => widget.strings;
 
@@ -1105,7 +1251,27 @@ class _CropHomePageState extends State<CropHomePage> {
   void dispose() {
     _manualPathController.dispose();
     _sizeController.dispose();
+    _processingPool?.dispose();
+    _processingPool = null;
     super.dispose();
+  }
+
+  Future<_ProcessingPool> _ensureProcessingPool() async {
+    final desiredSize = _preferredWorkerCount;
+    final existing = _processingPool;
+    if (existing != null && existing.size == desiredSize) {
+      return existing;
+    }
+    existing?.dispose();
+    final pool = await _ProcessingPool.start(desiredSize);
+    _processingPool = pool;
+    return pool;
+  }
+
+  int get _preferredWorkerCount {
+    final cores = Platform.numberOfProcessors;
+    final safeCores = cores > 2 ? cores - 1 : cores;
+    return math.max(1, math.min(_maxWorkerCap, safeCores));
   }
 
   Widget _buildManualInput(ThemeData theme) {
@@ -1229,7 +1395,7 @@ class _CropHomePageState extends State<CropHomePage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DropdownButtonFormField<CompressionMode>(
-          initialValue: _compressionMode,
+          value: _compressionMode,
           decoration: InputDecoration(
             labelText: _strings.compressionDropdownLabel,
             border: const OutlineInputBorder(),
@@ -1265,7 +1431,7 @@ class _CropHomePageState extends State<CropHomePage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DropdownButtonFormField<OutputFormat>(
-          initialValue: _outputFormat,
+          value: _outputFormat,
           decoration: InputDecoration(
             labelText: _strings.formatDropdownLabel,
             border: const OutlineInputBorder(),
@@ -1296,13 +1462,29 @@ class _CropHomePageState extends State<CropHomePage> {
   Widget _buildSettingsMenu(ThemeData theme) {
     return Align(
       alignment: Alignment.centerRight,
-      child: Tooltip(
-        message: _strings.settingsTooltip,
-        child: FilledButton.tonalIcon(
-          icon: const Icon(Icons.settings),
-          label: Text(_strings.settingsButtonLabel(widget.language.displayName)),
-          onPressed: _openSettingsDialog,
-        ),
+      child: Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        alignment: WrapAlignment.end,
+        children: [
+          Tooltip(
+            message: _strings.helpTooltip,
+            child: OutlinedButton.icon(
+              icon: const Icon(Icons.help_outline),
+              label: Text(_strings.helpButtonLabel),
+              onPressed: _openHelpDialog,
+            ),
+          ),
+          Tooltip(
+            message: _strings.settingsTooltip,
+            child: FilledButton.tonalIcon(
+              icon: const Icon(Icons.settings),
+              label: Text(_strings.settingsButtonLabel(widget.language.displayName)),
+              onPressed: _openSettingsDialog,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -1320,6 +1502,8 @@ class _CropHomePageState extends State<CropHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
+                Text(strings.languageMenuTitle, style: theme.textTheme.titleMedium),
+                const SizedBox(height: 4),
                 Text(strings.languageHelp, style: theme.textTheme.bodyMedium),
                 const SizedBox(height: 8),
                 ...AppLanguage.values.map(
@@ -1328,7 +1512,10 @@ class _CropHomePageState extends State<CropHomePage> {
                     dense: true,
                     contentPadding: EdgeInsets.zero,
                     groupValue: widget.language,
-                    title: Text(lang.displayName),
+                    title: Directionality(
+                      textDirection: lang.textDirection,
+                      child: Text(lang.displayName),
+                    ),
                     onChanged: (value) {
                       if (value != null) {
                         widget.onLanguageChanged(value);
@@ -1379,7 +1566,68 @@ class _CropHomePageState extends State<CropHomePage> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text('OK'),
+              child: Text(strings.okButton),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Future<void> _openHelpDialog() async {
+    final strings = _strings;
+    final steps = strings.helpDialogSteps;
+    await showDialog<void>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text(strings.helpDialogTitle),
+          content: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(strings.helpDialogDescription),
+                const SizedBox(height: 12),
+                ...List.generate(steps.length, (index) {
+                  final text = steps[index];
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('${index + 1}. ', style: Theme.of(context).textTheme.bodyMedium),
+                        Expanded(
+                          child: Text(
+                            text,
+                            style: Theme.of(context).textTheme.bodyMedium,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }),
+                const SizedBox(height: 8),
+                Text(
+                  strings.helpDialogFooter,
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                const SizedBox(height: 12),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: OutlinedButton.icon(
+                    onPressed: () => _launchUrl(_guideUrl),
+                    icon: const Icon(Icons.menu_book_outlined),
+                    label: Text(strings.helpDialogOpenReadme),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(strings.okButton),
             ),
           ],
         );
@@ -1799,7 +2047,8 @@ class _CropHomePageState extends State<CropHomePage> {
   ) async {
     if (paths.isEmpty) return;
     final tasks = Queue<String>()..addAll(paths);
-    final concurrency = math.max(1, math.min(tasks.length, Platform.numberOfProcessors));
+    final pool = await _ensureProcessingPool();
+    final concurrency = math.max(1, math.min(tasks.length, pool.size));
 
     Future<void> runWorker() async {
       while (tasks.isNotEmpty) {
@@ -1809,6 +2058,7 @@ class _CropHomePageState extends State<CropHomePage> {
           targetSize,
           compressionMode,
           outputFormat,
+          pool,
         );
         if (!mounted) continue;
         setState(() {
@@ -1826,6 +2076,7 @@ class _CropHomePageState extends State<CropHomePage> {
     int targetSize,
     CompressionMode compressionMode,
     OutputFormat outputFormat,
+    _ProcessingPool pool,
   ) async {
     final texts = _strings;
     final lower = path.toLowerCase();
@@ -1843,27 +2094,35 @@ class _CropHomePageState extends State<CropHomePage> {
     final destinationPath = _deriveOutputPath(path, outputFormat);
     final destinationName = _fileNameFromPath(destinationPath);
     try {
-      await Isolate.run(
-        () => _cropAndSave(
-          path,
-          destinationPath,
+      final workerResult = await pool.process(
+        sourcePath: path,
+        destinationPath: destinationPath,
+        targetSize: targetSize,
+        pngLevel: pngLevel,
+        jpgQuality: jpgQuality,
+        format: outputFormat,
+      );
+      if (workerResult.success) {
+        final compressionNote =
+            outputFormat.supportsCompression ? texts.compressionLogSuffix(compressionMode) : '';
+        final successMessage = texts.successLog(
           targetSize,
-          pngLevel,
-          jpgQuality,
-          outputFormat,
-        ),
-      );
-      final compressionNote =
-          outputFormat.supportsCompression ? texts.compressionLogSuffix(compressionMode) : '';
-      final successMessage = texts.successLog(
-        targetSize,
-        texts.formatShortLabel(outputFormat),
-        compressionNote: compressionNote,
-      );
+          texts.formatShortLabel(outputFormat),
+          compressionNote: compressionNote,
+        );
+        return _LogEntry(
+          fileName: destinationName,
+          message: successMessage,
+          success: true,
+        );
+      }
+      final readable = workerResult.issue != null
+          ? texts.processingError(workerResult.issue!)
+          : workerResult.error ?? texts.processingError(ProcessingIssue.unknown);
       return _LogEntry(
-        fileName: destinationName,
-        message: successMessage,
-        success: true,
+        fileName: inputName,
+        message: texts.failureLog(readable),
+        success: false,
       );
     } catch (error) {
       final readable = error is _ProcessingException
@@ -1906,6 +2165,190 @@ class _LogEntry {
   final String fileName;
   final String message;
   final bool success;
+}
+
+const int _preResizeMultiple = 4;
+
+class _ProcessingPool {
+  _ProcessingPool._(this._workers);
+
+  final List<_ProcessingWorker> _workers;
+  int _next = 0;
+
+  int get size => _workers.length;
+
+  static Future<_ProcessingPool> start(int size) async {
+    final workers = <_ProcessingWorker>[];
+    for (var i = 0; i < size; i++) {
+      workers.add(await _ProcessingWorker.spawn());
+    }
+    return _ProcessingPool._(workers);
+  }
+
+  Future<_WorkerResult> process({
+    required String sourcePath,
+    required String destinationPath,
+    required int targetSize,
+    required int pngLevel,
+    required int jpgQuality,
+    required OutputFormat format,
+  }) {
+    if (_workers.isEmpty) {
+      return _runInline(
+        sourcePath: sourcePath,
+        destinationPath: destinationPath,
+        targetSize: targetSize,
+        pngLevel: pngLevel,
+        jpgQuality: jpgQuality,
+        format: format,
+      );
+    }
+    final worker = _workers[_next];
+    _next = (_next + 1) % _workers.length;
+    return worker.process(
+      sourcePath: sourcePath,
+      destinationPath: destinationPath,
+      targetSize: targetSize,
+      pngLevel: pngLevel,
+      jpgQuality: jpgQuality,
+      format: format,
+    );
+  }
+
+  void dispose() {
+    for (final worker in _workers) {
+      worker.dispose();
+    }
+  }
+
+  Future<_WorkerResult> _runInline({
+    required String sourcePath,
+    required String destinationPath,
+    required int targetSize,
+    required int pngLevel,
+    required int jpgQuality,
+    required OutputFormat format,
+  }) async {
+    try {
+      await _cropAndSave(
+        sourcePath,
+        destinationPath,
+        targetSize,
+        pngLevel,
+        jpgQuality,
+        format,
+      );
+      return const _WorkerResult(success: true);
+    } catch (error) {
+      if (error is _ProcessingException) {
+        return _WorkerResult(success: false, issue: error.type);
+      }
+      return _WorkerResult(success: false, error: error.toString());
+    }
+  }
+}
+
+class _ProcessingWorker {
+  _ProcessingWorker._(this._isolate, this._sendPort);
+
+  final Isolate _isolate;
+  final SendPort _sendPort;
+
+  static Future<_ProcessingWorker> spawn() async {
+    final ready = ReceivePort();
+    final isolate = await Isolate.spawn(_processingWorkerMain, ready.sendPort);
+    final sendPort = await ready.first as SendPort;
+    ready.close();
+    return _ProcessingWorker._(isolate, sendPort);
+  }
+
+  Future<_WorkerResult> process({
+    required String sourcePath,
+    required String destinationPath,
+    required int targetSize,
+    required int pngLevel,
+    required int jpgQuality,
+    required OutputFormat format,
+  }) {
+    final response = ReceivePort();
+    _sendPort.send([
+      response.sendPort,
+      sourcePath,
+      destinationPath,
+      targetSize,
+      pngLevel,
+      jpgQuality,
+      format.index,
+    ]);
+    return response.first.then((message) {
+      response.close();
+      return _WorkerResult.fromMessage(message);
+    });
+  }
+
+  void dispose() {
+    _sendPort.send(null);
+    _isolate.kill(priority: Isolate.immediate);
+  }
+}
+
+class _WorkerResult {
+  const _WorkerResult({
+    required this.success,
+    this.issue,
+    this.error,
+  });
+
+  final bool success;
+  final ProcessingIssue? issue;
+  final String? error;
+
+  factory _WorkerResult.fromMessage(dynamic message) {
+    final data = message as List<dynamic>;
+    final issueIndex = data[1] as int?;
+    return _WorkerResult(
+      success: data[0] as bool,
+      issue: issueIndex == null ? null : ProcessingIssue.values[issueIndex],
+      error: data[2] as String?,
+    );
+  }
+}
+
+Future<void> _processingWorkerMain(SendPort initialPort) async {
+  final commandPort = ReceivePort();
+  initialPort.send(commandPort.sendPort);
+  await for (final dynamic message in commandPort) {
+    if (message == null) {
+      break;
+    }
+    final data = message as List<dynamic>;
+    final responsePort = data[0] as SendPort;
+    final sourcePath = data[1] as String;
+    final destinationPath = data[2] as String;
+    final targetSize = data[3] as int;
+    final pngLevel = data[4] as int;
+    final jpgQuality = data[5] as int;
+    final formatIndex = data[6] as int;
+    final format = OutputFormat.values[formatIndex];
+    try {
+      await _cropAndSave(
+        sourcePath,
+        destinationPath,
+        targetSize,
+        pngLevel,
+        jpgQuality,
+        format,
+      );
+      responsePort.send([true, null, null]);
+    } catch (error) {
+      if (error is _ProcessingException) {
+        responsePort.send([false, error.type.index, null]);
+      } else {
+        responsePort.send([false, null, error.toString()]);
+      }
+    }
+  }
+  commandPort.close();
 }
 
 enum CompressionMode {
@@ -2023,29 +2466,47 @@ Future<void> _cropAndSave(
     throw const _ProcessingException(ProcessingIssue.decode);
   }
 
-  final minSide = math.min(decoded.width, decoded.height);
+  img.Image working = decoded;
+  var minSide = math.min(working.width, working.height);
   if (minSide == 0) {
     throw const _ProcessingException(ProcessingIssue.empty);
   }
 
-  final cropX = ((decoded.width - minSide) / 2).round();
-  final cropY = ((decoded.height - minSide) / 2).round();
+  final preResizeLimit = targetSize * _preResizeMultiple;
+  if (minSide > preResizeLimit) {
+    final scale = preResizeLimit / minSide;
+    final scaledWidth = math.max(1, (working.width * scale).round());
+    final scaledHeight = math.max(1, (working.height * scale).round());
+    working = img.copyResize(
+      working,
+      width: scaledWidth,
+      height: scaledHeight,
+      interpolation: img.Interpolation.linear,
+    );
+    minSide = math.min(working.width, working.height);
+  }
+
+  final cropX = ((working.width - minSide) / 2).round();
+  final cropY = ((working.height - minSide) / 2).round();
 
   final square = img.copyCrop(
-    decoded,
+    working,
     x: math.max(0, cropX),
     y: math.max(0, cropY),
     width: minSide,
     height: minSide,
   );
 
+  final interpolation = minSide - targetSize > targetSize
+      ? img.Interpolation.linear
+      : img.Interpolation.cubic;
   final resized = minSide == targetSize
       ? square
       : img.copyResize(
           square,
           width: targetSize,
           height: targetSize,
-          interpolation: img.Interpolation.cubic,
+          interpolation: interpolation,
         );
 
   final level = pngLevel.clamp(0, 9).toInt();
@@ -2095,4 +2556,3 @@ Future<void> _cropAndSave(
     }
   }
 }
-
